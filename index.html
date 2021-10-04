@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock & EDM Festival</title>
+  <link rel="stylesheet" href="build/css/app.css">
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="contenedor contenido-header">
+      <h1>Rock & EDM Festival</h1>
+      <nav class="navegacion-principal">
+        <a href="#lineup">Line Up</a>
+        <a href="#galeria">Galería</a>
+        <a href="#boletos">Boletos</a>
+      </nav>
+    </div> 
+  </header>
+
+  <div class="video">
+    <div class="overlay">
+      <div class="contenedor contenido-video">
+        <h2>
+          Rock & EDM Festival
+
+          <span>Agosto 2021, Ciudad de México </span>
+        </h2>
+
+      </div>
+    </div>
+
+    <video controls autoplay muted loop>                        <!-- controls: Controles de video | autoplay: Se reproduce solo | muted: No tiene sonido | loop: Se repite-->
+      <source src="video/concierto.mp4" type="video/mp4">       <!-- Estos 3 formatos son para que funcionen en todos los navegadores -->
+      <source src="video/concierto.ogg" type="video/ogg">
+      <source src="video/concierto.webm" type="video/webm">
+    </video>
+  </div>
+
+  <div class="informacion contenedor">                          <!-- (!) CREAR SIEMPRE UN DIV PARA CADA ELEMENTO -->
+    <div class="imagen-informacion">
+      <img src="build/img/imagen_vocalista.jpg" alt="imagen vocalista" class="informacion-imagen">
+    </div>
+
+    <div class="contenido-informacion">
+      <h2>Rock & EDM Festival</h2>
+      <p class="fecha">Agosto 2021, Ciudad de Mexico</p>
+      <p class="texto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent elit ante, mattis at egestas a, interdum vitae massa. Donec eu pulvinar lectus. Nunc ultricies nisl arcu, quis mollis massa malesuada eget. Suspendisse aliquam maximus sem eu aliquam. </p>
+    </div>
+  </div>
+  <section id="lineup" class="lineup">        <!--Un section se usa cuando el siguiente elemento es un heading (un título)-->
+    <h3>Line Up</h3>
+
+    <p class="dia">Viernes 21</p>
+
+    <div class="escenarios-contenedor contenedor">
+      <div class="escenario rock bg-amarillo">
+        <p class="nombre-escenario">Escenario Rock</p>
+
+        <ul class="calendario">
+          <li>24:00 | <span>Metallica</span></li>
+          <li>22:00 | <span>Pearl Jam</span></li>
+          <li>20:00 | <span>Korn</span></li>
+          <li>19:00 | <span>Muse</span></li>
+          <li>18:00 | <span>Breaking Benjamin</span></li>
+          <li>17:00 | <span>30 Seconds to mars</span></li> 
+        </ul>
+      </div>
+
+      <div class="escenario edm bg-verde">
+        <p class="nombre-escenario">Escenario EDM</p>
+
+        <ul class="calendario">
+          <li>24:00 | <span>Deadmau5</span></li>
+          <li>22:00 | <span>Tiesto</span></li>
+          <li>20:00 | <span>Fedde Legrand</span></li>
+          <li>19:00 | <span>Hardwell<span></li>
+          <li>18:00 | <span>Dash Berlin</span></li>
+          <li>17:00 | <span>Audien</span></li> 
+        </ul>
+
+      </div>
+    </div>
+
+    <p class="dia">Sábado 22</p>
+    <div class="escenarios-contenedor contenedor">
+      <div class="escenario rock bg-verde">
+        <p class="nombre-escenario">Escenario Rock</p>
+
+        <ul class="calendario">
+          <li>24:00 | <span>Metallica</span></li>
+          <li>22:00 | <span>Pearl Jam</span></li>
+          <li>20:00 | <span>Korn</span></li>
+          <li>19:00 | <span>Muse</span></li>
+          <li>18:00 | <span>Breaking Benjamin</span></li>
+          <li>17:00 | <span>30 Seconds to mars</span></li> 
+        </ul>
+      </div>
+
+      <div class="escenario edm bg-amarillo">
+        <p class="nombre-escenario">Escenario EDM</p>
+
+        <ul class="calendario">
+          <li>24:00 | <span>Deadmau5</span></li>
+          <li>22:00 | <span>Tiesto</span></li>
+          <li>20:00 | <span>Fedde Legrand</span></li>
+          <li>19:00 | <span>Hardwell<span></li>
+          <li>18:00 | <span>Dash Berlin</span></li>
+          <li>17:00 | <span>Audien</span></li> 
+        </ul>
+
+      </div>
+
+    </div>
+
+
+  </section>
+
+  <section id="galeria" class="galeria contenedor">       <!--Para hacer galerías, usar un section-->
+    <h3>Galería</h3>
+    
+    <ul class="galeria-imagenes"> 
+    
+    </ul>
+  </section>
+
+  <section id="boletos" class="boletos bg-verde">
+    <h3>Boletos</h3>
+
+    <div class="contenedor-boletos contenedor">
+      <div class="basico plan">
+        <p>Pase 1 Día</p>
+        <table class="pase">          <!--La tabla se conforma de tres partes: -->
+          <thead>
+            <tr>                      <!--tr es toda la línea de celdas horizontal (filas)-->
+              <th>                    <!--th se usa para cada celda-->
+                Incluye
+              </th>
+            </tr>
+          </thead>
+            
+          <tbody>
+            <tr>
+              <td>
+                Acceso a todos los escenarios
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Comida y bebida
+              </td>
+            </tr>
+          </tbody>
+            
+          <tfoot>
+            <tr>
+              <td>
+                $100
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="premium plan">
+        <p>Pase 2 Días</p>
+        <table class="pase">          <!--La tabla se conforma de tres partes: -->
+          <thead>
+            <tr>                      <!--tr es toda la línea de celdas horizontal (filas)-->
+              <th>                    <!--th se usa para cada celda-->
+                Incluye
+              </th>
+            </tr>
+          </thead>
+            
+          <tbody>
+            <tr>
+              <td>
+                Acceso a todos los escenarios
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Comida y bebida
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Camisa del evento
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                Acceso VIP
+              </td>
+            </tr>
+
+          </tbody>
+             
+          <tfoot>
+            <tr>
+              <td>
+                $180
+              </td>
+            </tr>
+          </tfoot>
+        </table>
+
+      </div>
+    </div>
+  </section>
+  
+  <footer class="footer">
+    <p>Rock & EDM Festival - Todos los derechos reservados</p>
+  </footer>
+  <script src="build/js/bundle.min.js"></script>
+ </body>
+</html>
